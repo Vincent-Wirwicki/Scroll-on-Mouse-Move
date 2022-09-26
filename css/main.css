@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  overflow: hidden;
+} */
+
+#container {
+  background: #262626;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space__wrap {
+  width: 70vw;
+  height: 70vh;
+  border: solid #fff 2px;
+  overflow: auto;
+  padding: 10px;
+  overflow: auto;
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.space__wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.space {
+  position: relative;
+  top: -50%;
+  left: -50%;
+  width: 175%;
+  height: 175%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 300ms ease-out, transform 300ms ease-out;
+  margin: 1rem;
+  user-select: none;
+  will-change: transform;
+}
+
+.progress__bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15vw;
+  height: 2px;
+  transform: translate(-50%, 50%);
+  background: #595959;
+  user-select: none;
+}
+
+.progress__bar:last-child {
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.progress__bar__inner {
+  height: 100%;
+  width: 0%;
+  background: #fff;
+  will-change: width;
+}
+
+button {
+  position: fixed;
+  top: 15vh;
+  left: 15vw;
+  width: 80px;
+  height: 50px;
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  user-select: none;
+}

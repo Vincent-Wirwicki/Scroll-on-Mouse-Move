@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: #262626;
+  width: 200vw;
+  height: 200vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Alumni Sans", sans-serif;
+}
+
+.rule {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  color: #f2f2f2;
+  letter-spacing: 2px;
+}
+
+.objectif {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  margin: 10px;
+  color: #f2f2f2;
+  letter-spacing: 2px;
+}
+
+.score {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  margin: 10px;
+  color: #f2f2f2;
+  letter-spacing: 2px;
+}
+
+.whiteStar {
+  width: 2px;
+  height: 2px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 2px #f2f2f2;
+}
+
+.redStar {
+  width: 2px;
+  height: 2px;
+  background: #f23535;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 2px #f23535;
+}
+
+.greenStar {
+  width: 2px;
+  height: 2px;
+  background: #88bf9b;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 2px #88bf9b;
+}
+
+.yellowStar {
+  width: 2px;
+  height: 2px;
+  background: #f2db66;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 2px #f2db66;
+}
+
+.blackHole {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #0d0d0d;
+  border: solid 1px #f2f2f2;
+  box-shadow: 0 0 3px 3px #f2f2f2;
+  position: absolute;
+  opacity: 0;
+}
+
+.blackHole:hover {
+  cursor: pointer;
+}
