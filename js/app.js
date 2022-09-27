@@ -11,10 +11,6 @@ const maxStars = 300;
 const speed = 15;
 const ease = 0.075;
 
-let isGrab = false,
-  isHover = false,
-  isCompleted = false;
-
 let frame = 0,
   mouseX = x,
   mouseY = y,
